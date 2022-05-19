@@ -15,7 +15,6 @@ namespace eDesign.Controllers
 
         public IActionResult Index()
         {
-            ViewData["Greeting"] = "Hello World!";
             return View();
         }
 
@@ -28,10 +27,6 @@ namespace eDesign.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-        public IActionResult Test1()
-        {
-            return View();
         }
     }
 }
